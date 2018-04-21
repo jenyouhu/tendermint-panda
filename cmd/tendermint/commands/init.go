@@ -44,13 +44,13 @@ func initFilesWithConfig(config *cfg.Config) error {
 		logger.Info("Generated node key", "path", nodeKeyFile)
 	}
 
-	// genesis file
+	// genesis file Modifiy CHAIN_ID hujiyou 2018.4.21
 	genFile := config.GenesisFile()
 	if cmn.FileExists(genFile) {
 		logger.Info("Found genesis file", "path", genFile)
 	} else {
 		genDoc := types.GenesisDoc{
-			ChainID: cmn.Fmt("test-chain-%v", cmn.RandStr(6)),
+			ChainID: cmn.Fmt("hujiyou-chain-%v", cmn.RandStr(6)),
 		}
 		genDoc.Validators = []types.GenesisValidator{{
 			PubKey: pv.GetPubKey(),

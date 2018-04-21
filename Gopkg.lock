@@ -290,7 +290,7 @@
 
 [[projects]]
   branch = "master"
-  name = "golang.org/x/crypto"
+  name = "github.com/golang/crypto"
   packages = [
     "curve25519",
     "nacl/box",
@@ -305,7 +305,7 @@
 
 [[projects]]
   branch = "master"
-  name = "golang.org/x/net"
+  name = "github.com/golang/net"
   packages = [
     "context",
     "http2",
@@ -319,12 +319,12 @@
 
 [[projects]]
   branch = "master"
-  name = "golang.org/x/sys"
+  name = "github.com/golangsys"
   packages = ["unix"]
   revision = "3b87a42e500a6dc65dae1a55d0b641295971163e"
 
 [[projects]]
-  name = "golang.org/x/text"
+  name = "github.com/golang/text"
   packages = [
     "collate",
     "collate/build",
@@ -346,12 +346,12 @@
 
 [[projects]]
   branch = "master"
-  name = "google.golang.org/genproto"
+  name = "github.com/google/go-genproto"
   packages = ["googleapis/rpc/status"]
   revision = "51d0944304c3cbce4afe9e5247e21100037bff78"
 
 [[projects]]
-  name = "google.golang.org/grpc"
+  name = "github.com/grpc/grpc-go"
   packages = [
     ".",
     "balancer",

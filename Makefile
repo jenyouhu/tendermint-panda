@@ -49,14 +49,14 @@ update_tools:
 #Run this from CI
 get_vendor_deps:
 	@rm -rf vendor/
-	@echo "--> Running dep"
+	@echo "--> Running dep .....1"
 	@dep ensure -vendor-only
 
 
 #Run this locally.
 ensure_deps:
 	@rm -rf vendor/
-	@echo "--> Running dep"
+	@echo "--> Running dep......2"
 	@dep ensure
 
 draw_deps:

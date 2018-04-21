@@ -27,6 +27,10 @@ import (
 	grpc "google.golang.org/grpc"
 )
 
+//add one line by jenyouhu on 2018-03-10
+//import  cotx "golang.org/x/net/context"
+
+
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
 var _ = fmt.Errorf
